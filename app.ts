@@ -19,7 +19,7 @@ app.addEventListener('listen', ({ hostname, port, secure }) => {
 })
 
 /* Middleware */
-app.use(middleware())
+app.use(middleware(appLogger))
 
 /* Routes */
 app.use(router.routes())
