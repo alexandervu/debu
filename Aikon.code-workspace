@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Tomorrow Night Blue",
+		"deno.enable": true,
+		"deno.lint": true,
+		"deno.unstable": true
+	}
+}
