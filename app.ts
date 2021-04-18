@@ -1,11 +1,11 @@
 /**
  * Create APP and start it
  */
-import { Application, oakCors, dotenvConfig } from './deps.ts'
+import { Application, dotenvConfig } from './deps.ts'
 import { Context } from "./types.ts";
 import { createLogger } from './log.ts'
+import { middleware } from './middleware.ts'
 import router from './routes/index.ts'
-
 
 const env = dotenvConfig({ safe: true })
 const appLogger = await createLogger(env.AIKON_LOGGER)
@@ -19,7 +19,7 @@ app.addEventListener('listen', ({ hostname, port, secure }) => {
 })
 
 /* Middleware */
-app.use(oakCors())
+app.use(middleware())
 
 /* Routes */
 app.use(router.routes())
