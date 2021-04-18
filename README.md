@@ -27,17 +27,18 @@ Hint: do not forget to export denon binary diretory to path: `export PATH="/User
 - [x] Add file and console logging (deno)
 - [x] Environment variables (dotenv)
 - [x] Routes
-- [ ] 404 Page not found
+- [x] 404 Page not found
+- [ ] Configuration file
 - [ ] Middleware
   * [x] Cors (cors)
   * [ ] JWT/Passport
   * [ ] Helmet
-  * [ ] Route Logger
-- [ ] Context extension with user/authentication
-- [ ] Configuration file
+  * [x] Route Logger
+  * [x] Error handler
 - [ ] MongoDB / DB connenction
 - [ ] Database Models
 - [ ] GraphQL, Resolvers in own folder
+- [ ] Context extension with user/authentication
 - [ ] i18n
 - [ ] Sentry Error Logging
 - [ ] Begin.com deployment
